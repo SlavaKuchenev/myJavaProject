@@ -8,15 +8,12 @@ public class Lesson2 {
         printColor();
         compareNumbersV1();
         compareNumbersV2();
-
-
-    }
+        }
+    
     public static void printThreeWords(){
-        System.out.println(" Orange ");
-        System.out.println(" Banana ");
-        System.out.println(" Apple ");
-
+        System.out.println("Orange/nBanana/nApple");
     }
+    
     public static void checkSumSignV1(){
         int a = 3;
         int b = 4;
@@ -27,12 +24,14 @@ public class Lesson2 {
             System.out.println("Сумма отрицательная");
         }
     }
+    
     public static void checkSumSignV2(){
         int a = 3;
         int b = 4;
         int sum = a + b;
         System.out.println(sum >= 0 ? "Сумма положительная" : "Сумма отрицательная");
     }
+    
     public static void printColor(){
         int value = 3;
         if (value < 0){
@@ -46,19 +45,21 @@ public class Lesson2 {
             }
         }
     }
+    
     public static void compareNumbersV1(){
         int a = 9999;
         int b = 4;
         if (a >= b){
             System.out.println("a >= b");
         } else {
-            System.out.println("a <= b");
+            System.out.println("a < b");
         }
     }
+    
     public static void compareNumbersV2(){
         int a = 3;
         int b = 4;
-        System.out.println(a >= b? " a >= b" : "a <= b");
+        System.out.println(a >= b? " a >= b" : "a < b");
     }
 
 }
